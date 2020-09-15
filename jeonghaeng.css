@@ -1,0 +1,118 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul {
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #333;
+  font-size: 0.5em;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+ul {
+  position: fixed;
+  top: 70px;
+  width: 100%;
+}
+h1 {
+  position: relative;
+  top: 0;
+  font-size: 35px;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#major {
+  font-style: italic;
+  font-weight: bold;
+}
+#experience {
+  display: inline;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: white;
+  float: none;
+}
+#experience a {
+  display: inline;
+  display: block;
+  color: black;
+  text-align: left;
+  padding: 0;
+  text-decoration: none;
+  background-color: white;
+  float: none;
+  font-size: 1em;
+}
+#experience:hover a {
+  color: green;
+}
+h2, .introduction p {
+  position: relative;
+  padding-top: 50px;
+
+}
+.project {
+  display: block;
+list-style-type: disc;
+margin-top: 1em;
+margin-bottom: 1 em;
+margin-left: 0;
+margin-right: 0;
+padding-left: 40px;
+float: none;
+}
