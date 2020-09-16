@@ -16,15 +16,6 @@ a {
   padding: 8px;
   background-color: #dddddd;
 }
-
-.menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
 ul {
   background-color: #333;
 }
@@ -51,13 +42,20 @@ li a:hover {
   background-color: #4CAF50;
 }
 
-ul {
-  position: fixed;
+.menu {
+  position: flex;
   top: 70px;
-  width: 100%;
+  width: 1518.5px;
+  font-size: 30px;
+  list-style-type: none;
+  margin: 0 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 h1 {
   position: relative;
+
   top: 0;
   font-size: 35px;
   display: block;
@@ -65,13 +63,16 @@ h1 {
   text-align: center;
   padding: 0 0;
 }
+.frame {
+  display:flex;
+  background-color: black;
+}
 img {
-    display: block;
+    display: flex;
     max-width: 100%;
-    height: 500px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-
 }
 #major {
   font-style: italic;
@@ -101,11 +102,7 @@ img {
 #experience:hover a {
   color: green;
 }
-h2, .introduction p {
-  position: relative;
-  padding-top: 50px;
 
-}
 .project {
   display: block;
 list-style-type: disc;
@@ -115,4 +112,86 @@ margin-left: 0;
 margin-right: 0;
 padding-left: 40px;
 float: none;
+}
+.menu-container {
+  border: 1px solid #fff;  /* For debugging */
+  display: flex;
+  justify-content: flex-end;
+}
+.fixed {
+  display:fixed;
+}
+/*.invisablebox {
+  display:flex;
+  margin: 22.5px 0 0 0;
+}*/
+/* Mobile Styles */
+.home-contents {
+  border: 1px solid #fff;
+  width: 100%;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  background-color: #5995DA;
+}
+.aboutme {
+  width:100%;
+  margin: 0 auto;
+  padding: 0;
+  color: #000;
+  background-color: #5995DA;
+  border: 1px solid #fff;
+}
+.introduction {
+  background-color: #F5CF8E;
+  text-align: center;
+}
+.home {
+  background-color: #F09A9D;
+  text-align: center;
+}
+.like {
+  background-color: #C8C6FA;
+  text-align: center;
+}
+.dummy {
+  background-color: black;
+  text-align: center;
+}
+@media only screen and (max-width: 500px) {/*fix to 400px*/
+  .introduction,
+  .home,
+  .like,
+  .selfie {
+    width:50%;
+    height: 400px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+  .introduction,
+  .home,
+  .like,
+  .selfie {
+    width:50%;
+    height: 400px;
+  }
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .introduction,
+  .home,
+  .like,
+  .dummy,
+  .selfie {
+    width:33.3%;
+    height: 400px;
+  }
 }

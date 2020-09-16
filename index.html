@@ -6,15 +6,28 @@
     <link rel='stylesheet' href='jeonghaeng.css'/>
   </head>
     <body>
-      <h1>Welcom to My Portfolio<h1>
-        <ul class="menu">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li style="float:right"><a href="contact.html">About</a></li>
-        </ul>
-      <h2>About Me</h2>
-      <p class="introduction"> My name is Jeonghaeng Heo. I am from South Korea. I realy like<span id="major"> CS major!</span></p>
-      <img src="image.jpg"/>
+      <div class='fixed'>
+        <h1>Welcom to My Portfolio</h1>
+          <div class='menu-container'>
+            <ul class="menu">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li style="float:right"><a href="contact.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class='invisablebox'></div>
+      <h2 class='aboutme'>About Me</h2>
+
+        <div class='home-contents'>
+          <div class='dummy'></div>
+          <div class='selfie'><div class='frame'><img src ="image.jpg"/></div></div>
+          <div class='dummy'></div>
+          <div class='introduction'><p> My name is Jeonghaeng Heo.</p></div>
+          <div class='home'><p>I am from South Korea.</p></div>
+          <div class='like'><p> I realy like<span id="major"> CS major!</span></p></div>
+        </div>
+      </div>
     </body>
 </html>
